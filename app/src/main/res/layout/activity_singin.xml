@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="LoginViewModel"
+            type="com.example.user.internproject.viewmodel.LoginViewModel"/>
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.SigninActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/xxx"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#339966"/>
+        <ImageView
+            android:layout_width="390dp"
+            android:layout_height="100dp"
+            android:src="@drawable/user"
+            android:layout_marginTop="160dp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/backimage"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:onClick="backUp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        >
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="@={LoginViewModel.EmailAddress}"
+            />
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:text="@={LoginViewModel.Password}"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:layout_marginTop="8dp"
+            android:id="@+id/button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="signin"
+            android:background="@drawable/buttontext_background"
+            android:textStyle="bold"
+            android:onClick="@{(v) -> LoginViewModel.onClick(v)}"
+            />
+            <!--android:onClick="login"-->
+            <Button
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/forgetButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password"
+                android:background="@drawable/buttontext_background"
+                android:textStyle="bold"
+                android:onClick="forgotPassword"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:layout_marginTop="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="You haven't an account yet?"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:paddingTop="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:background="#27AE60"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text="SignUp"
+            android:onClick="Signup"
+            android:gravity="center"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

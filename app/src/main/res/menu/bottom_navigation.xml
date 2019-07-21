@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/local_id"
+        android:icon="@drawable/local_nav_icon"
+        android:title="Local"
+        />
+    <item
+        android:id="@+id/server_id"
+        android:icon="@drawable/server_nav_icon"
+        android:title="Server"
+        />
+    <item
+        android:id="@+id/more_id"
+        android:icon="@drawable/more_nav_icon"
+        android:title="More"
+        />
+</menu>

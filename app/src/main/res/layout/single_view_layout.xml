@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="local"
+            type="com.example.user.internproject.model.PersonModel"/>
+    </data>
+
+
+<RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#48C9B0"
+    android:padding="4dp"
+    >
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <ImageView
+        android:layout_margin="5dp"
+        android:src="@drawable/student"
+        android:id="@+id/myImageViewId"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name           : "
+            android:textColor="#117864"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/nameViewId"
+            android:textColor="#D5499C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{local.name}"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/titleName"
+            />
+        <!--     designation-->
+        <TextView
+            android:id="@+id/titleDesignation"
+            android:textColor="#117864"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Designation : "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_below="@id/nameViewId"
+            />
+        <TextView
+            android:id="@+id/designationViewId"
+            android:textColor="#D5499C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/titleDesignation"
+            android:layout_below="@+id/nameViewId"
+            android:text="@{local.designation}"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+        <!-- Team -->
+        <TextView
+            android:id="@+id/titleTeam"
+            android:textColor="#117864"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team            : "
+            android:layout_below="@+id/designationViewId"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/teamViewId"
+            android:textColor="#D5499C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{local.team}"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/designationViewId"
+            android:layout_toRightOf="@+id/titleTeam"
+            android:layout_marginTop="3dp"
+            />
+    </RelativeLayout>
+        //</LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
+</layout>

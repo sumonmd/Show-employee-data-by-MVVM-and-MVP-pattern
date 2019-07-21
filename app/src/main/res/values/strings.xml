@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Intern Project</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">EGqYnDjn5nZHmb1isxxROkR4OhM1bJrlEqKkYrzx</string>
+    <string name="back4app_client_key">IrTFyeIV5gudmFSbkY8PXya0h84pS1Rbyg3zNSp1</string>
+
+    <string-array name="names">
+        <item>Sumon</item>
+        <item>Tushar</item>
+        <item>Sumon</item>
+        <item>Sumon</item>
+    </string-array>
+    <string-array name="designation">
+        <item>Intern</item>
+        <item>Teacher</item>
+        <item>Intern</item>
+        <item>Teacher</item>
+    </string-array>
+</resources>

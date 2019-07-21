@@ -1,0 +1,72 @@
+[
+	{
+	  "name":"Md. Moniruzzaman",
+	  "designation": "Teacher",
+	  "team"       :"Android",
+	  "image" : "https://www.w3schools.com/howto/img_avatar.png"
+	},
+	{
+		"name":"Md Zakaria",
+		"designation": "Teacher",
+		"team"       :"Web ",
+		"image" : "https://cdn.pixabay.com/photo/2018/04/28/13/18/man-3357275__340.png"
+
+	},
+	{
+		"name":"Md Ariful Islam",
+		"designation": "Teacher",
+		"team"       :"Web ",
+		"image" : "https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366__340.png"
+
+	},
+	{
+	  "name":"Rokibul Islam",
+	  "designation": "Intern Engineer",
+	  "team"       :"Android ",
+	   "image" : "https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584__340.png"
+	},
+	{
+	  "name":"Tushar Pramanik",
+	  "designation": "Intern Engineer",
+	  "team"       :"Android ",
+	  "image" : "https://www.w3schools.com/w3images/avatar2.png"
+	},
+	{
+	  "name":"Alamin Hossain",
+	  "designation": "Intern Engineer",
+	  "team"       :"Android ",
+	  "image" : "https://www.w3schools.com/w3images/avatar2.png"
+	},
+	{
+	  "name":"Zahid Hasan",
+	  "designation": "Intern Engineer",
+	  "team"       :" Web ",
+	  "image" : "https://www.w3schools.com/w3images/avatar2.png"
+	},
+	{
+	  "name":"Juel Hossain",
+	  "designation": "Intern Engineer",
+	  "team"       :"Web ",
+	  "image" : "https://www.w3schools.com/w3images/avatar2.png"
+	},
+	{
+	  "name":"Md Sumon Ali",
+	  "designation": "Intern Engineer",
+	  "team"       :"Web ",
+	  "image" : "https://www.w3schools.com/howto/img_avatar.png"
+	},
+	{
+		"name":"Soma Paul",
+		"designation": "Intern Engineer",
+		"team"       :"QA ",
+		"image" : "https://www.w3schools.com/howto/img_avatar2.png"
+
+	},
+	{
+		"name":"Rompa Paul",
+		"designation": "Intern Engineer",
+		"team"       :"QA ",
+		"image" : "https://pittwateranimalhospital.com.au/wp-content/uploads/2018/02/AVATAR.png"
+
+	}
+]
